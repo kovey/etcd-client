@@ -38,18 +38,18 @@ class Member extends Base
     public function promote(Promote $promote) : MML
     {
         $response = $this->etcd->call(CM::MEMBER_PROMOTE, $promote);
-        return MML($response->all());
+        return new MML($response->all());
     }
 
     public function remove(Remove $remove) : MML
     {
         $response = $this->etcd->call(CM::MEMBER_REMOVE, $remove);
-        return MML($response->all());
+        return new MML($response->all());
     }
 
     public function update(Update $update) : MML
     {
         $response = $this->etcd->call(CM::MEMBER_UPDATE, $update);
-        return MML($response->all());
+        return new MML($response->all());
     }
 }

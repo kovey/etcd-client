@@ -1,4 +1,4 @@
-## Etcd Client With PHP
+## Etcd Client V3 With PHP
 #### Description
 ###### Library
 ###### Usage:
